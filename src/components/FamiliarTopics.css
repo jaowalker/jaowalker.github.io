@@ -1,7 +1,12 @@
-.gray-blue {
-  color: #343d42;
+#skills > ul > div {
+  display: flex;
+  flex-direction: column;
 }
 
-.test-color {
-  color: #ffffff;
+.bg-gray-blue {
+  background: #343d42;
+}
+
+.gray-blue {
+  color: #343d42;
 }
