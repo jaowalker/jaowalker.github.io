@@ -9,7 +9,7 @@ function App() {
       <Hero />
       <FamiliarTopics />
       {/* <RelatedProjects /> */}
-      {/* <WorkHistory /> */}
+      <WorkHistory />
     </div>
   );
 }
