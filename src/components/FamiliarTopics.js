@@ -12,35 +12,70 @@ import {
   faComments,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "tachyons";
+import "./FamiliarTopics.css";
 
 const FamiliarTopics = () => {
+  const iconSize = "7x";
+
   return (
-    <>
+    <div className="ma4 ph4 pv2 br3 bg-white avenir gray-blue">
       <h2>Skills</h2>
       <h3>Interpersonal</h3>
-      <ul>
-        <FontAwesomeIcon
-          icon={faCommentDots}
-          size="4x"
-          style={{ color: "black" }}
-        />
-        <FontAwesomeIcon icon={faExchangeAlt} size="4x" />
-        <FontAwesomeIcon icon={faLevelUpAlt} size="4x" />
-        <FontAwesomeIcon icon={faComments} size="4x" />
+      <ul className="flex justify-around mh7">
+        <div className="flex flex-column">
+          <p className="tc">Expressing Abstract Concepts</p>
+          <FontAwesomeIcon
+            icon={faCommentDots}
+            size={iconSize}
+            className="center"
+          />
+        </div>
+        <div className="flex flex-column">
+          <p className="tc">Collaboration</p>
+          <FontAwesomeIcon icon={faExchangeAlt} size={iconSize} />
+        </div>
+        <div className="flex flex-column">
+          <p className="tc">Elevating Others</p>
+          <FontAwesomeIcon
+            className="pl3"
+            icon={faLevelUpAlt}
+            size={iconSize}
+          />
+        </div>
+        <div className="flex flex-column">
+          <p className="tc">Exchanging Ideas</p>
+          <FontAwesomeIcon icon={faComments} size={iconSize} />
+        </div>
       </ul>
 
       <h3>Programming Languages</h3>
-      <ul>
-        <FontAwesomeIcon icon={faJs} size="4x" />
-        <FontAwesomeIcon icon={faHtml5} size="4x" />
-        <FontAwesomeIcon icon={faCss3Alt} size="4x" />
+      <ul className="flex justify-around mh7">
+        <div className="flex flex-column">
+          <p className="tc">Javascript</p>
+          <FontAwesomeIcon icon={faJs} size={iconSize} />
+        </div>
+        <div className="flex flex-column">
+          <p className="tc">HTML</p>
+          <FontAwesomeIcon icon={faHtml5} size={iconSize} />
+        </div>
+        <div className="flex flex-column">
+          <p className="tc">CSS</p>
+          <FontAwesomeIcon icon={faCss3Alt} size={iconSize} />
+        </div>
       </ul>
       <h3>Frameworks - Runtimes</h3>
-      <ul>
-        <FontAwesomeIcon icon={faReact} size="4x" />
-        <FontAwesomeIcon icon={faNodeJs} size="4x" />
+      <ul className="flex justify-around mh7">
+        <div className="flex flex-column">
+          <p className="tc">React</p>
+          <FontAwesomeIcon icon={faReact} size={iconSize} />
+        </div>
+        <div className="flex flex-column">
+          <p className="tc">Node.js</p>
+          <FontAwesomeIcon icon={faNodeJs} size={iconSize} />
+        </div>
       </ul>
-    </>
+    </div>
   );
 };
 
